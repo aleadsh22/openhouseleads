@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>OpenHouseLeads - Request Access</title>
+    <title>Request Access - OpenHouseLeads</title>
 
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    padding: 50px;
-}
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            background:#f5f5f5;
+            padding:50px;
+        }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-}
+        .card{
+            max-width:600px;
+            margin:auto;
+            background:white;
+            padding:30px;
+            border-radius:12px;
+        }
 
-h1 {
-    text-align: center;
-}
+        input{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            box-sizing:border-box;
+        }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-button {
-    width: 100%;
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 14px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #1d4ed8;
-}
-</style>
+        button{
+            width:100%;
+            padding:14px;
+            background:#2563eb;
+            color:white;
+            border:none;
+            border-radius:6px;
+            font-size:16px;
+            cursor:pointer;
+        }
+    </style>
 
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
 <h1>Request Access</h1>
 
-<p>Tell us about
+<p>
+Tell us about yourself and we'll set up your OpenHouseLeads account.
+</p>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Phone Number">
+
+<input type="text" placeholder="Brokerage">
+
+<button>
+Request Access
+</button>
+
+</div>
+
+</body>
+
+</html>
