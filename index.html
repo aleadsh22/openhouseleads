@@ -3,211 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>OpenHouseLeads</title>
 
 <style>
-* {
-    box-sizing: border-box;
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f6f8;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    color: #111827;
+header{
+    background:#111827;
+    color:white;
+    padding:18px;
+    font-size:22px;
+    font-weight:bold;
 }
 
-nav {
-    background: #111827;
-    color: white;
-    padding: 18px 24px;
-    font-size: 21px;
-    font-weight: bold;
+.container{
+    max-width:800px;
+    margin:60px auto;
+    padding:20px;
 }
 
-.container {
-    max-width: 760px;
-    margin: 45px auto;
-    padding: 0 18px;
+.card{
+    background:white;
+    padding:40px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-.card {
-    background: white;
-    padding: 32px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+.button{
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:10px;
 }
 
-h1 {
-    margin-top: 0;
+.secondary{
+    background:#475569;
 }
 
-h2 {
-    margin-top: 30px;
-}
-
-p {
-    line-height: 1.5;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 13px;
-    margin: 8px 0 15px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-button {
-    display: inline-block;
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 14px 22px;
-    margin: 5px;
-    border-radius: 9px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #1d4ed8;
-}
-
-.secondary {
-    background: #475569;
-}
-
-.danger {
-    background: #b91c1c;
-}
-
-.hidden {
-    display: none;
-}
-
-.message {
-    margin-top: 18px;
-    color: #047857;
-    font-weight: bold;
-}
-
-.note {
-    color: #64748b;
-    font-size: 14px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 22px;
-}
-
-th,
-td {
-    text-align: left;
-    padding: 11px;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-th {
-    background: #f8fafc;
-}
-
-.qr-placeholder {
-    max-width: 260px;
-    min-height: 220px;
-    margin: 20px auto;
-    background: #f8fafc;
-    border: 2px dashed #94a3b8;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    text-align: center;
-}
-
-.center {
-    text-align: center;
-}
-
-@media (max-width: 650px) {
-    .container {
-        margin: 20px auto;
-    }
-
-    .card {
-        padding: 22px;
-    }
-
-    table {
-        font-size: 12px;
-    }
-
-    th,
-    td {
-        padding: 7px;
-    }
-}
 </style>
+
 </head>
 
 <body>
 
-<nav>OpenHouseLeads</nav>
+<header>
+OpenHouseLeads
+</header>
 
 <div class="container">
 
-    <!-- HOME PAGE -->
-    <section id="homePage" class="card">
-        <h1>One QR Code. Unlimited Open Houses.</h1>
+<div class="card">
 
-        <p>
-            Replace paper sign-in sheets and capture every visitor digitally.
-        </p>
-
-        <button onclick="showPage('requestPage')">
-            Request Access
-        </button>
-
-        <button class="secondary" onclick="showPage('loginPage')">
-            Agent Login
-        </button>
-    </section>
-
-
-    <!-- REQUEST ACCESS PAGE -->
-    <section id="requestPage" class="card hidden">
-        <h1>Request Access</h1>
-
-        <p>
-            Tell us about yourself. OpenHouseLeads accounts are manually approved.
-        </p>
-
-        <form id="requestForm">
-
-            <input
-                id="requestName"
-                type="text"
-                placeholder="Full Name"
-                required
-            >
-
-            <input
-                id="requestEmail"
-                type="email"
-                placeholder="Email"
-                required
-            >
-
-            <input
-                id="requestPhone"
-                type="tel"
-                placeholder="Phone Number"
-                required
-            >
+<h1>One QR Code. Unlimited Open
