@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenHouseLeads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family:Arial;text-align:center;padding:50px;">
+  <h1>OpenHouseLeads</h1>
+  <h2>Replace Your Open House Clipboard</h2>
+  <p>Capture visitor names, emails, and phone numbers digitally.</p>
+
+  <button style="padding:15px 30px;">
+    Get Started
+  </button>
+
+</body>
+</html>
