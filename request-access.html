@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Request Access</title>
 
 <style>
@@ -18,8 +16,8 @@ body{
 header{
     background:#111827;
     color:white;
-    padding:18px;
-    font-size:22px;
+    padding:20px;
+    font-size:24px;
     font-weight:bold;
 }
 
@@ -39,10 +37,9 @@ header{
 input{
     width:100%;
     padding:14px;
-    margin-top:10px;
-    margin-bottom:15px;
     border:1px solid #ccc;
     border-radius:8px;
+    margin-bottom:15px;
     box-sizing:border-box;
 }
 
@@ -50,7 +47,94 @@ input{
     background:#2563eb;
     color:white;
     border:none;
-    padding:14px 22px;
     border-radius:8px;
+    padding:14px 24px;
+    font-weight:bold;
     cursor:pointer;
-    font-weight:bold
+}
+
+.back{
+    display:block;
+    margin-top:20px;
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.success{
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+OpenHouseLeads
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Request Access</h1>
+
+<p>
+Tell us about yourself and we'll contact you.
+</p>
+
+<form id="requestForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email"
+required>
+
+<input
+type="text"
+placeholder="Phone Number"
+required>
+
+<input
+type="text"
+placeholder="Brokerage"
+required>
+
+<button class="button" type="submit">
+Request Access
+</button>
+
+</form>
+
+<div id="message" class="success"></div>
+
+index.html
+← Back to Home
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("requestForm").addEventListener("submit", function(event){
+
+event.preventDefault();
+
+document.getElementById("message").innerHTML =
+"Thank you. Your request has been submitted.";
+
+});
+
+</script>
+
+</body>
+</html>
